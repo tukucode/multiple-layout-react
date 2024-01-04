@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // LAYOUTS
-import AdminLayout from "@/src/layouts/admin";
-import CustomerLayout from "@/src/layouts/customer";
-import DefaultLayout from "@/src/layouts/default";
+import AdminLayout from "./layouts/admin";
+import CustomerLayout from "./layouts/customer";
+import DefaultLayout from "./layouts/default";
 
 // PAGES
-import Home from "@/src/pages/Home";
-import Login from "@/src/pages/Login";
-import WelcomePage from "@/src/pages/admin/Index";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import WelcomePage from "./pages/admin/Index";
 
 export default function App() {
   return (
