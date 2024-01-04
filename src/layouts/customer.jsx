@@ -10,7 +10,7 @@ export default function CustomerLayout() {
       </Navbar>
 
       <Container>
-        <Outlet />
+        <Outlet key="customer-layout" />
       </Container>
     </>
   );
