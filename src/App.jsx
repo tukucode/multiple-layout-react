@@ -5,9 +5,9 @@ import CustomerLayout from "./layouts/customer";
 import DefaultLayout from "./layouts/default";
 
 // PAGES
+import WelcomePage from "./pages/admin/Index";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import WelcomePage from "./pages/admin/Index";
 
 export default function App() {
   return (
