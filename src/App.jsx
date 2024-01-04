@@ -14,12 +14,12 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<AdminLayout />}>
-          <Route path="/admin" element={<WelcomePage />} />
+          <Route index path="/admin" element={<WelcomePage />} />
           <Route path="/admin/detail" element={<h1>Admin Detail</h1>} />
         </Route>
 
         <Route Component={CustomerLayout}>
-          <Route path="/" element={<Home />} />
+          <Route index path="/" element={<Home />} />
           <Route path="/about-me" element={<h1>About Me</h1>} />
         </Route>
 
