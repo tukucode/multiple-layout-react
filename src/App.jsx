@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // LAYOUTS
-import AdminLayout from "./layouts/admin";
-import CustomerLayout from "./layouts/customer";
-import DefaultLayout from "./layouts/default";
+import AdminLayout from "@/layouts/admin";
+import CustomerLayout from "@/layouts/customer";
+import DefaultLayout from "@/layouts/default";
 
 // PAGES
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import WelcomePage from "./pages/admin/Index";
+import Home from "@/pages/Home";
+import Login from "@/pages/Login";
+import WelcomePage from "@/pages/admin/Index";
 
 export default function App() {
   return (
@@ -25,9 +25,8 @@ export default function App() {
 
         <Route element={<DefaultLayout />}>
           <Route path="/login" Component={Login} />
+          <Route path="/*" element={<h1>404 | Not found</h1>} />
         </Route>
-
-        <Route path="/*" element={<h1>404 | Not found</h1>} />
       </Routes>
     </BrowserRouter>
   );

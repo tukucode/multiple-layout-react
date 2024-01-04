@@ -11,7 +11,7 @@ export default function AdminLayout() {
       </Navbar>
 
       <Container>
-        <Outlet key="admin-layout" />
+        <Outlet key="admin" />
       </Container>
     </>
   );
